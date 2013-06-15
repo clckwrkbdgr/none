@@ -1,4 +1,3 @@
-(DESIGN DOCUMENT)
 none
 ====
 
@@ -7,23 +6,29 @@ Utility for doing nothing.
 Overview
 --------
 None is a utility, that does nothing, simply starts and exits immediately.
-Absolutely no process should be done whatsoever.
+Absolutely no process is done whatsoever.
+Current version is 1.0.
 
-Interface
----------
-None controls via command line interface.
+Installation and running
+------------------------
+
+None is compiled from the source using `make` command.
+Produced executables called `none`, surpisingly.
+
+Usage
+-----
 Usage:
 
 	none [-v|--version|-h|--help]
+	
+	Options:
+	  -h, --help        print message like this and exit.
+	  -v, --version     print version information and exit.
 
-Options:
+None always return zero as exit code.
 
--h, --help: print message like this and exits.
--v, --version: print program version and exits.
-
-None return code is default one for system (usually it should be zero).
-
-Program flow
+Project info
 ------------
-
-Program starts and immediately exits.
+License: MIT
+URL: https://github.com/kp580bm1/none
+Copyright (C) kp580bm1 (kp580bm1@gmail.com) 2013
